@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phaser Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            position: relative;
+        }
+        #controlPanel {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        input {
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="controlPanel">
+            <label for="numCircles">Number of Circles:</label>
+            <input type="number" id="numCircles" value="3" min="1" max="8">
+            <label for="letterInput">Letters:</label>
+            <input type="text" id="letterInput" value="أبج">
+            <label for="woodTextInput">Wood Text:</label>
+            <input type="text" id="woodTextInput" value="Sample Text">
+            <label for="answers">Answers:</label>
+            <input type="text" id="answers" readonly>
+            <button onclick="updateGameElements()">Update</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

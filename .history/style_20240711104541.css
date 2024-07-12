@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ts_split_arabic';
+    src: url('path/to/ts_split_arabic.ttf') format('truetype'); /* Adjust the path as needed */
+}
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+.droid-arabic-kufi {
+  font-family: 'Droid Arabic Kufi', serif;
+}
+/* body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+} */
